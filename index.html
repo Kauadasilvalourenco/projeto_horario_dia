@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo_ex013.css">
+</head>
+<body>
+    <div id="cor_de_fundo">
+        <h1>Hora do Dia</h1>
+        <div id="cor_fundo_imagens">
+            <p id="horas_do_dia"></p>
+                <picture>
+                    <source media="(max-width: 300px)" srcset="imagens/imagem_amanhecer_250l">
+                    <img src="imagens/imagem_amanhecer_300l.jpg" alt="Imagem da Manhã" id="imagem_manha">
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 300px)" srcset="imagens/imagem_entardecer_250l">
+                    <img src="imagens/imagem_entardecer300l.jpg" alt="Imagem da Tarde" id="imagem_tarde">
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 300px)" srcset="imagens/imagem_anoitecer_250l">
+                    <img src="imagens/imagem_anoitecer300l.jpg" alt="Imagem da Noite" id="imagem_noite">
+                </picture>
+        </div>
+    </div>
+
+    <script src="codigo_ex013.js"></script>
+</body>
+</html>
