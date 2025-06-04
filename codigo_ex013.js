@@ -7,19 +7,19 @@ var horaSistema = new Date()
 var horas = horaSistema.getHours()
 
 if (horas < 12) {
-    horasDoDia.innerHTML = `Agora são ${horas} horas da Manhã`
+    horasDoDia.innerHTML = `Agora são ${horas} horas da Manhã <br> Bom Dia!`
     imagemManha.style.display = "block"
     corFundo.style.backgroundColor = "navajowhite"
 }
 else {
     if (horas >= 12 && horas < 19) {
-        horasDoDia.innerHTML = `Agora são ${horas} horas da Tarde`
+        horasDoDia.innerHTML = `Agora são ${horas} horas da Tarde <br> Boa Tarde!`
         imagemManha.style.display = "none"
         imagemTarde.style.display = "block"
         corFundo.style.backgroundColor = "burlywood"
     }
     else {
-        horasDoDia.innerHTML = `Agora são ${horas} horas da Noite`
+        horasDoDia.innerHTML = `Agora são ${horas} horas da Noite <br> Boa Noite!`
         imagemManha.style.display = "none"
         imagemTarde.style.display = "none"
         imagemNoite.style.display = "block"
